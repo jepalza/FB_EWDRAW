@@ -1,0 +1,189 @@
+// retocado a mano por Jepalza
+#include ".\Res\Res.bi"
+
+//LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH
+
+IDC_MAINICON ICON DISCARDABLE ".\Res\FB_EWDRAW.ico"
+
+MI_TOOLBAR_CAD BITMAP   ".\res\SMIBAR.bmp"
+
+IDR_MENUS MENU
+BEGIN
+  POPUP "Fichero"
+  BEGIN
+    MENUITEM "Nuevo",  32776
+    MENUITEM "Abrir",  32777
+    MENUITEM "Guardar",  32778
+    MENUITEM "Guardar Como",  32779
+    MENUITEM SEPARATOR
+    POPUP "Importar"
+    BEGIN
+      MENUITEM "BREP",  32794
+      MENUITEM "STEP",  32795
+      MENUITEM "IGES",  32796
+      MENUITEM "DXF" ,  32800
+      MENUITEM SEPARATOR
+      MENUITEM "STL (maya)",  32797
+      MENUITEM "OBJ (maya)",  32798
+      MENUITEM "DXF (maya)",  32801
+      MENUITEM "3DS (maya)",  32799
+    END
+    POPUP "Exportar"
+    BEGIN
+      MENUITEM "BREP",  32802
+      MENUITEM "STEP",  32804
+      MENUITEM "IGES",  32805
+      MENUITEM "DXF" ,  32808
+      MENUITEM SEPARATOR
+      MENUITEM "STL" ,  32806
+      MENUITEM "OBJ" ,  32807
+    END
+    MENUITEM SEPARATOR
+    MENUITEM "Salir",  32793
+  END
+  POPUP "Editar"
+  BEGIN
+    MENUITEM "Deshacer",  32965
+    MENUITEM "Rehacer",  32966
+    MENUITEM SEPARATOR
+    MENUITEM "Seleccionar Todo",  32839
+    MENUITEM "Invertir Seleccion",  32967
+    MENUITEM "Quitar seleccion",  32840
+  END
+  POPUP "Vistas"
+  BEGIN
+    MENUITEM "Redibujar",  32841
+    MENUITEM "Mover",  32842
+    MENUITEM "Girar",  32843
+    MENUITEM SEPARATOR
+    MENUITEM "Centrar Vista",  32815
+    MENUITEM SEPARATOR
+    POPUP "Vistas"
+    BEGIN
+      MENUITEM "Arriba",  32817
+      MENUITEM "Abajo",  32818
+      MENUITEM "Izquierda",  32975
+      MENUITEM "Derecha",  32976
+      MENUITEM "Frente",  32977
+      MENUITEM "Detras",  32978
+      MENUITEM SEPARATOR
+      MENUITEM "SO ISO",  32979
+      MENUITEM "SE ISO",  32980
+      MENUITEM "NE ISO",  32981
+      MENUITEM "NO ISO",  32982
+    END
+    POPUP "Eje"
+    BEGIN
+      MENUITEM "Ver Eje",  32984 //,  CHECKED
+      MENUITEM "Ocultar Eje",  32985
+    END
+    POPUP "Suavizado"
+    BEGIN
+      MENUITEM "Ver Triangulos",  33021
+      MENUITEM "Normal",  33022  //,  CHECKED
+    END
+    MENUITEM SEPARATOR
+    MENUITEM "Solido",  32990
+    MENUITEM "Alambre",  32991
+    MENUITEM "Textura",  33080
+    POPUP "Ocultar"
+    BEGIN
+      MENUITEM "Ocultar Vista",  32993
+      MENUITEM "Activar Vista",  32994  //,  CHECKED
+    END
+  END
+  POPUP "Dibujar"
+  BEGIN
+    POPUP "Solidos 3D"
+    BEGIN
+      MENUITEM "Caja",  32903
+      MENUITEM "Cilindro",  32904
+      MENUITEM "Esfera",  32905
+      MENUITEM "Cono",  32907
+      MENUITEM "Toroide",  32908
+      MENUITEM "Rampa",  32909
+    END
+    POPUP "Booleanas"
+    BEGIN
+      MENUITEM "Union",  32934
+      MENUITEM "Interseccion",  32935
+      MENUITEM "Subtraccion",  32937
+    END
+    MENUITEM SEPARATOR
+    MENUITEM "Linea",  32888
+    MENUITEM "Rectangulo",  32889
+    MENUITEM "Polilinea",  32890
+    MENUITEM SEPARATOR
+    MENUITEM "Arco",  32891
+    MENUITEM "Arco 3P",  32892
+    MENUITEM "Circulo",  32893
+    MENUITEM "Circulo 3P",  32894
+    MENUITEM "BSPline",  32895
+    MENUITEM "Elipse",  32896
+    MENUITEM "Elipse Arco",  32897
+    MENUITEM SEPARATOR
+    MENUITEM "Punto",  32898
+    MENUITEM "Texto",  32899
+    MENUITEM "Superficie",  32900
+    MENUITEM "Imagen",  32901
+    MENUITEM SEPARATOR
+    MENUITEM "Prisma",  32911
+    MENUITEM "Tubo",  32912
+    MENUITEM "Revolucion",  32913
+    MENUITEM "Seccion",  32914
+  END
+  POPUP "Modificar"
+  BEGIN
+    MENUITEM "Borrar",  32999
+    MENUITEM "Copiar",  32916
+    MENUITEM "Espejo",  32918
+    MENUITEM "Espejo por plano",  32919
+    MENUITEM "Espesor",  32921
+    MENUITEM "Mover",  32922
+    MENUITEM "Rotar",  32923
+    MENUITEM SEPARATOR
+    MENUITEM "Escalar",  32924
+    MENUITEM "Explotar",  32925
+    MENUITEM "Arista",  32926
+    MENUITEM "Redondeo",  32927
+    MENUITEM "Romper",  32928
+    MENUITEM "Extender",  32929
+    MENUITEM "Unir",  33012
+    MENUITEM "Dividir",  33039
+    MENUITEM SEPARATOR
+    MENUITEM "Cambiar Color",  32930
+    MENUITEM "Matriz",  32931
+    MENUITEM "Arista 3D Polilinea",  32932
+    MENUITEM SEPARATOR
+    POPUP "Superficies"
+    BEGIN
+      MENUITEM "Copiar",  32939
+      MENUITEM "Borrar",  32940
+      MENUITEM "Extrusionar",  32941
+      MENUITEM "Extrusionar Curva",  32942
+    END
+    MENUITEM "Grosor Solido 3D ",  33001
+    MENUITEM "Transparente",  32945
+  END
+  POPUP "Utiles"
+  BEGIN
+    MENUITEM "Longitud",  32954
+    MENUITEM "Area",  32955
+    MENUITEM "Volumen",  32956
+    MENUITEM SEPARATOR
+    MENUITEM "Datos De Usuario",  32957
+    MENUITEM SEPARATOR
+    MENUITEM "Textura a Forma",  32958
+    MENUITEM "Projectar solido 3D a 2D",  32959
+    MENUITEM "Interseccion alambre/figura",  33002
+    MENUITEM "Seccion de solido 3D",  32961
+    MENUITEM "Ver ID de la entidad",  33082
+  END
+  POPUP "Demos"
+  BEGIN
+    MENUITEM "BSPline  DEMO",  33078
+    MENUITEM "BOOLEAN  DEMO",  33079
+    MENUITEM "RayTrace DEMO",  33081
+  END
+END

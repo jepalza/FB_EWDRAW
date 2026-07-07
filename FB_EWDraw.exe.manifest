@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+  <!-- Configuración específica para el OCX de EWDraw 2015 -->
+  <file name="ewdraw.ocx">
+    <!-- Librería de tipos de EWDraw v15 -->
+    <typelib 
+        tlbid="{28D4BD95-AEEB-48A0-A50D-9D4F5D97349E}" 
+        version="15.0" 
+        helpdir="" />
+    <!-- Clase principal del objeto de control 3D EWDraw -->
+    <comClass 
+        clsid="{05870C58-4F79-46F1-AE70-BCEBE4A53FE9}" 
+        tlbid="{28D4BD95-AEEB-48A0-A50D-9D4F5D97349E}" 
+        progid="EWDRAW.EWDrawCtrl.1" 
+        description="EWDraw 3D ActiveX Control" />
+  </file>
+</assembly>
