@@ -18,6 +18,11 @@ Y con un fichero "manifest" se puede usar la OCX sin necesidad de registro previ
 
 Este código FreeBasic no está completo, es mas una demostración, pero funciona como CAD de solidos 3D.
 
+Se emplea una versión un poco vieja del EWDRAW por ser la mas compatible, en este caso una version 15.9.4 de 2018:
+
+setup_ult_v15_trial.exe
+
+que ya tenía descargada de hace años. Hoy día aún puede encontrarse en una conocida web de descarga de archivos viejos.
 
 ![FB_EWDRAW](https://github.com/jepalza/FB_EWDRAW/blob/main/imagen/FB_EWDRAW.png)
 
