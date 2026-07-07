@@ -1,7 +1,7 @@
 # FB_EWDRAW
 Librería para apoyo CAD usando FreeBasic
 
-Empleando la libreria CAD/CAE de aqui:
+Empleando la libreria CAD/CAE de aqui (que a su vez emplea OPENCASCADE):
 
 http://www.eastwindsoft.com/es/
 
